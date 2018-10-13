@@ -1,6 +1,6 @@
 from card import *
 from deck import Deck
-from table import Table
+from Table import Table
 from game_manager import Game_manager
 
 game_manager = Game_manager(3)

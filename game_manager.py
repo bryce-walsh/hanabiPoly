@@ -1,6 +1,6 @@
 from card import *
 from deck import Deck
-from table import Table
+from Table import Table
 
 def cards_per_player(num_players):
   if num_players == 2:
