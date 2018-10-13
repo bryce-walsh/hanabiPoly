@@ -1,5 +1,5 @@
 from card import Card
-from colors import Color
+from card import Color
 import random
 
 class Deck:
@@ -28,3 +28,5 @@ class Deck:
   def print_deck(self):
     for card in self.cards:
       print(card)
+
+
