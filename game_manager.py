@@ -38,4 +38,15 @@ class Game_manager:
     for hand in range(0,self.num_players):
       self.hands.append(self.deck.draw(self.hand_size))
 
+  def print_visible_hands(self, player_number):
+    for hand_num in range(0,self.num_players):
+      if hand_num != player_number:
+        print(self.hands[hand_num])
 
+  def play_game(self):
+    for turn in range(0, 100):
+      player_number = turn % self.num_players
+      print("It is player " + str(player_number) + "'s turn")
+      print("Visible_hands:")
+      self.print_visible_hands(player_number)
+      response = input("What would you like to do?")
