@@ -3,7 +3,7 @@ from card import Color
 import random
 
 class Deck:
-  cards = []
+  #cards = []
   numbers = [1, 1, 1, 2, 2, 3, 3, 4, 4, 5]
 
   def __init__(self):

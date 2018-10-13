@@ -1,12 +1,10 @@
 from card import *
 from deck import Deck
 from table import Table
+from game_manager import Game_manager
 
-card = Card(Color.BLUE, 5)
-print(card)
-table = Table()
-table.print_state()
+game_manager = Game_manager(3)
+game_manager.deal_hands()
+game_manager.print_state()
 
 
-deck = Deck()
-deck.print_deck()

@@ -22,4 +22,7 @@ class Card:
     self.number = number
 
   def __str__(self):
-    return (str(self.number) + " of " + str(self.color)) 
+    return (str(self.number) + " of " + str(self.color))
+
+  def __repr__(self):
+    return self.__str__()
